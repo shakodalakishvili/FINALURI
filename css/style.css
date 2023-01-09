@@ -1,0 +1,195 @@
+.conteiner{
+    max-width: 1440px;
+    background-color: #f6f8f9;
+    margin: 0 auto;
+    position: relative;
+    font-family:'roboto'sans-serif ;
+}
+
+/* Daiywo header */
+
+header{
+    width: 1440px;
+    height: 51px;
+    padding: 20px 20px 11px 20px;
+    background-color: #f6f8f9;
+    position: fixed;
+    top: 0px;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.one{
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+
+    0% {transform:rotate(0deg);
+        top: 0px;}
+    100%{
+        transform: rotate(360deg);
+
+    }
+    
+   
+
+}
+
+ul{
+    display: flex;
+    gap: 31px;
+}
+
+li{
+    font-size: 11px;
+    color: #343638;
+    cursor: pointer;
+    font-family: 'roboto';
+    opacity: 0.5;
+}
+li:hover{
+    border-bottom:3px solid red;
+}
+
+.a_one{
+    color: #343638;
+    font-weight: bolder;
+    opacity: 1
+    ;
+}
+
+/* daiwyo section */
+.section_one{
+    width: 1440px;
+    height: 599px;
+    display: flex;
+    border: 7px solid green;
+    
+}
+.poto{
+    width: 60%;
+    height: 100%;
+    border: 3px solid yellow;
+    background-image: url(../photos/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.poto:hover{
+    width: 45%;
+    height: 35%;
+    position: absolute;
+}
+.world_news{
+    border: 3px solid black;
+    width: 65%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 176px auto 176px auto;
+    
+
+}
+h1,.P_ONE{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+
+}
+h1::after{
+    content: "";
+    width: 400px;
+    height: 1.5px;
+    background-color: white;
+    display: block;
+    margin-top: 30px;
+}
+
+.P_TWO{
+    font-size: 16px;
+    color: white;
+}
+button{
+    width: 25%;
+    height: 40px;
+    font-size: 11px;
+    color: white;
+    background-color: #fa6980;
+    border-radius: 10px;
+
+}
+
+.more_news{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border: 3px solid pink;
+}
+
+.M{
+    width: 100%;
+    height: 90%;
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text{
+    width: 70%;
+    height: 70%;
+    margin: 100px auto 100px auto;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+h2::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #d6dadf;
+    display: block;
+    margin-top: 20px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fa6980;
+    margin-bottom: 20px;
+}
+.P_TREE{
+    font-size: 16px;
+    font-weight: bold;
+    color: #202124;
+    margin-bottom: 10px;
+}
+.P_FOUR{
+    margin-bottom: 10px;
+
+}
+.p_five{
+    display: flex;
+    color: #a6adb4;
+    gap: 15px;
+
+}
+
+
+
+.P_FOUR,.p_five{
+    font-size: 16px;
+    color: #a6adb4;
+    line-height: 1.5;
+}
+/* daiwyo section 2 */
