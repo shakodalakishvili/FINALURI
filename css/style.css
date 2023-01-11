@@ -43,27 +43,26 @@ header{
 
 }
 
-ul{
+header nav ul{
     display: flex;
     gap: 31px;
 }
 
-li{
+header nav ul li{
     font-size: 11px;
     color: #343638;
     cursor: pointer;
     font-family: 'roboto';
     opacity: 0.5;
 }
-li:hover{
+header nav ul li:hover{
     border-bottom:3px solid red;
 }
 
-.a_one{
+.active{
     color: #343638;
     font-weight: bolder;
-    opacity: 1
-    ;
+    opacity: 1;    
 }
 
 /* daiwyo section */
@@ -71,26 +70,20 @@ li:hover{
     width: 1440px;
     height: 599px;
     display: flex;
-    border: 7px solid green;
+    
     
 }
 .poto{
     width: 60%;
     height: 100%;
-    border: 3px solid yellow;
     background-image: url(../photos/Image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
-.poto:hover{
-    width: 45%;
-    height: 35%;
-    position: absolute;
-}
 .world_news{
-    border: 3px solid black;
+
     width: 65%;
     height: 40%;
     display: flex;
@@ -119,13 +112,21 @@ h1::after{
     font-size: 16px;
     color: white;
 }
-button{
-    width: 25%;
-    height: 40px;
+.learn-more{
+    padding: 10px 20px;
+    width: fit-content;
     font-size: 11px;
     color: white;
     background-color: #fa6980;
     border-radius: 10px;
+    transition: .3s all;
+    cursor: pointer;
+    border: none;
+
+}
+.learn-more:hover {
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    color: #fff;
 
 }
 
@@ -133,13 +134,12 @@ button{
     width: 40%;
     height: 100%;
     background-color: white;
-    border: 3px solid pink;
+
 }
 
 .M{
     width: 100%;
     height: 90%;
-    border: 2px solid purple;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -195,33 +195,28 @@ h3{
 /* daiwyo section 2 */
 
 .section_two{
-    border: 2px solid red;
-    width: 100%;
+    width: 80%;
     height: 410px;
+    margin: 0 auto;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ebeff1;
 }
-.section{
-    border: 3px solid blue;
+/* .section{
     width: 80%;
     height: 100%;
     margin: 0 auto;
-}
+} */
 .CARDS{
-    border: 3px solid green;
     width: 100%;
     height: 350px;
     margin: 20px auto;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
 }
-.card_one,
-.card_two,
-.card_tree{
-    border: 3px solid darkblue;
+.card{
     background-color: white;
     width: 37%;
     height: 100%;
@@ -238,8 +233,13 @@ h4{
     width: 100%;
     height: 50%;
     margin-bottom: 40px;
-    border: 2px solid teal;
     border-radius: 8px;
+}
+.foto-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .grass{
     background-image: url(../photos/card1.png);
@@ -257,6 +257,7 @@ h4{
     background-image: url(../photos/card2.png);
     background-position: center;
     background-size: cover;
+
 
 }
 .umbrella:hover{
@@ -277,7 +278,7 @@ h4{
     55%{
         background-image: url(../photos/card3.png);
         opacity: 0.5;
-        width:120%;
+        width:110%;
         height:99%;
         cursor: move;
         
@@ -286,7 +287,6 @@ h4{
 
     }
     .p_six{
-        border: 2px solid green;
         width: 80%;
         height: 40%;
         margin: 0 auto;
@@ -297,6 +297,198 @@ h4{
     }
 /* section 3 daiwyio */
 
-.section_tree{
+.section_three{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background-color:#f6f8f9 ;
+    display: flex;
+    flex-direction: column;
+
+}
+.sectiontree_two{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'roboto';
+    margin-bottom: 40px;    
+    display: flex;
+    justify-content: space-between;
+}
+.maindiv{
+    width: 100%;
+    padding-top: 40px;
+    padding-top: 0px;
+    display: flex;
+}
+
+.leftimage{
+    width: 60%;
+    position: relative;
+    padding-bottom: 40px;
     
+}
+.leftimageone{
+    width: 760px;
+    height: 430px;
+    position: relative;
+}
+.leftimage_h5{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 5;
+}
+.leftimage_h6{
+    width: 760px;
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    top: 288px;
+    left: 40px;
+    z-index: 5;
+}
+.leftimage_p{
+    width: 618px;
+    font-family: roboto;
+    font-size: 16px;
+    color: white;
+    padding-top: 10px;
+    position: absolute;
+    top: 310px;
+    left: 40px;
+    z-index: 5;
+}
+.right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 20px;
+
+}
+.rightside{
+    width: 345px;
+    height: 274px;
+    display: inline-block;
+}
+.right_imag{
+    width: 100%;
+    height: 90%;
+    padding-bottom: 75px;
+
+}
+.right_h4imag{
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* daiwyo footer */
+footer{
+    width: 100%;
+    height: 200px;    
+    padding: 58px 132px 63px 145px;
+    background-color: #a6adb4;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.left-footer {
+    display: flex;
+}
+.footer_nav {
+    margin-right: 50px;
+}
+.footer_logo{
+    font-size: 20px;
+    color: #fff;
+    margin-right: 50px;
+}
+.footer_nav ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.footer-socials i {
+    margin-left: 32px;
+    color:#fff ;
+    
+}
+/* conteineri */
+.a_two{
+    color: #343638;
+    font-weight: bolder;
+    opacity: 1
+    ;
+}
+.contact-hero {
+    width: 80%;
+    height: 410px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    padding-top: 50px;
+}
+.img-container {
+    width: 50%;    
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.contact-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;    
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    width: 50%;
+}
+
+.contact-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;    
+}
+.contact-group label {
+    font-size: 14px;
+    margin-bottom: 8px;    
+}
+
+.contact-group input {
+    width: 400px;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #e7e7e7;
+}
+input[type='submit'] {
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #fa6980;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .2px;
 }
