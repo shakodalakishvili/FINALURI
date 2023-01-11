@@ -393,7 +393,8 @@ h4{
 /* daiwyo footer */
 footer{
     width: 1440px;
-    height: 200px;    
+    height: 200px;
+    margin: 0 auto;    
     padding: 58px 132px 63px 145px;
     background-color: #a6adb4;
     font-size: 13px;
