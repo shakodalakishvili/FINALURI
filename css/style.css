@@ -257,12 +257,12 @@ h4{
     background-image: url(../photos/card2.png);
     background-position: center;
     background-size: cover;
+    transition:all 4s ease;
 
 
 }
 .umbrella:hover{
-    box-shadow: 10px 20px 15px rgb(235, 47, 47),
-    -10px -20px -15px rgb(235, 47, 47);
+    opacity: 0.5;
     cursor: grab;
 }
 
@@ -402,6 +402,15 @@ footer{
     justify-content: space-between;
 
 }
+footer:hover{
+    cursor: pointer;
+}
+.footer_nav ul li:hover{
+    cursor: pointer;
+  border-bottom:  1px solid red;
+
+}
+
 .left-footer {
     display: flex;
 }
@@ -413,6 +422,26 @@ footer{
     color: #fff;
     margin-right: 50px;
 }
+.footer_logo:hover{
+    
+        animation-name: logo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes logo {
+    
+        0% {transform:rotate(0deg);
+            top: 0px;}
+        70%{
+            transform: rotate(360deg);
+    
+        }
+        
+       
+    
+    }
+
 .footer_nav ul li {
     font-size: 15px;
     margin-bottom: 10px;
@@ -492,3 +521,91 @@ input[type='submit'] {
     text-transform: uppercase;
     letter-spacing: .2px;
 }
+
+/* section */
+.textconteiner{
+    width: 1162px;
+    height: 255px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 39px;
+    border-top:2px solid #ebeded;
+    border-bottom: 2px solid #ebeded;
+   margin-top: 36px;
+}
+.avatar{
+    width: 19%;
+    height: 40%;
+}
+.avatar_p{
+    font-size: 24px;
+    font-weight: bold;
+    width: 361px;
+    height: 61px;
+    margin-top: 20px;
+    padding-left: 5px;
+
+}
+.avatar{
+    padding-top: 39px;
+    padding-left: 5px;
+}
+.righttext{
+    width: 800px;
+    display: flex;
+    gap: 39px;
+}
+.righttextone{
+    width: 361px;
+    height: 50px;
+    padding-top: 42px;
+}
+.right_texti1{
+    font-size: 14px;
+    width: 361px;
+    height: 172px;
+    color: #a6adb4;
+}
+.right_texti2{
+    font-size: 14px;
+    width: 300px;
+    height: 128px;
+    color: #a6adb4;
+
+}
+
+.sectionmaintwo{
+    width: 85%;
+    height: 831px;
+    margin: 20px auto;
+    border-bottom: 1px solid #a6adb4;
+   
+}
+.imagespilo{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 40px;
+}
+
+.textiqveda{
+    width: 100%;
+    height: 205px;
+    
+}
+.textiqveda_p{
+    padding-bottom: 50px;
+    color: #a6adb4;
+}
+
+
+
+
+
+
+
+
+
+
+
