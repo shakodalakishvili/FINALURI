@@ -1,5 +1,6 @@
 .conteiner{
     max-width: 1440px;
+    width: 100%;
     background-color: #f6f8f9;
     margin: 0 auto;
     position: relative;
@@ -10,7 +11,7 @@
 
 header{
     width: 1440px;
-    height: 51px;
+    height: inherit;
     padding: 20px 20px 11px 20px;
     background-color: #f6f8f9;
     position: fixed;
@@ -600,6 +601,219 @@ input[type='submit'] {
     color: #a6adb4;
 }
 
+@media screen and (max-width:768px) {
+
+   .conteiner{
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   }
+   
+    .section_one{
+        width: 769px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .poto{
+        width: 769px;
+    }
+    .world_news{
+        align-items: left;
+    }
+    .more_news{
+        width: 100%;
+
+    }
+    .text{
+        align-items:center
+        ;
+    }
+    .more{
+        width:768px ;
+    }
+
+    .section_two{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50%;
+        margin-bottom: 40px;
+      
+    }
+    h4{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .CARDS{
+        width: 80%;
+        height: 100%;
+        display: flex;
+       
+    }
+    .card{
+        width: 45%;
+        height: 400px;
+    }
+    .cardo{
+        display: none;
+    }
+
+    .sectiontree_two{
+        margin-top: 20%;
+    }
+    .section_three{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .maindiv{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+     
+        
+
+
+    }
+    .rightside{
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    .rightsideo{
+        display: none;
+    }
+    
+
+    
+    footer{
+        width: 100%;
+        margin-top:10%;
+    }
+    .footer-socials{
+        display: flex;
+    }
+    /* CONTACTI */
+
+    .contact-hero{
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .img-container{
+        width: 100%;
+       
+    }
+    .contact-form{
+        width: 768px;
+        padding: 20%;
+    }
+    .contact-group{
+        width: 80%;
+    }
+    .textconteiner{
+        margin-top: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .iconavatar{
+        width: 30%;
+        
+    }
+    .righttext{
+        margin-top: -10%;
+    }
+    .right_texti1{
+        font-size: 14px;
+    }
+    .right_texti2{
+        font-size: 14px;
+    }
+    .sectionmaintwo{
+        margin-top: 20%;
+    }
+    .imagespilo{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+   
+
+
+    
+   
+    
+}
+
+@media screen and (max-width:480px){
+    .conteiner{
+        width: 480px;
+    }
+    .section_one{
+        width: 100%;
+    }
+    .poto{
+        width: 100%;
+    }
+    .section_two{
+        width: 100%;
+        margin-top: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .more_news{
+        width: 100%;
+    }
+    .more{
+        width: 90%;
+        
+    }
+    .section_three{
+        margin-top: 90%;
+    }
+    .section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectiontree_two{
+        margin-left: 15%;
+    }
+    .CARDS{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .h4{
+        margin-left: 20%;
+    }
+
+footer{
+    width: 480px;
+}
+.left-footer{
+    display: none;
+}
+.card{
+    width: 80%;
+}
+.rightside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right_h4img{
+    display: flex;
+    flex-direction: row;
+}
+
+    
+}
 
 
 
