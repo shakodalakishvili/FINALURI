@@ -44,10 +44,7 @@ header{
 
 }
 
-header nav .nav_ul{
-    display: flex;
-    gap: 31px;
-}
+
 
 header nav .nav_ul li{
     font-size: 11px;
@@ -56,10 +53,10 @@ header nav .nav_ul li{
     font-family: 'roboto';
     opacity: 0.5;
 }
-header nav nav.ul li:hover{
+header nav .nav_ul li:hover{
     border-bottom:3px solid red;
 }
-.fa-solid {
+ .burgermenu{
     display: none;
     
 
@@ -97,6 +94,11 @@ header nav nav.ul li:hover{
     justify-content: space-between;
     margin: 176px auto 176px auto;
     
+
+}
+
+.show{
+    display: flex  !important;
 
 }
 h1,.P_ONE{
@@ -838,9 +840,6 @@ footer{
 header{
     width: 480px;
 }
-nav{
-    display: none;
-}
 
 .img-container{
     width: 480px;
@@ -867,34 +866,39 @@ nav{
     width: 480px;
     
 }
-.fa-bars{
+.burgermenu{
     display: block;
+    border: none;
     
    
 
 }
-.fa-bars:hover{
+.burgermenu:hover{
     cursor: pointer;
     
 }
 
 
 .nav_ul{
-    width: 480px;
+    display: none;
+    width: 200px;
+    
     position: fixed;
-    top: 100px;
-    background-color:black;
-    gap: 0;
-    flex-direction: column;
+    top: 50px;
+    right: 300px;
+    background-color:white;
+    gap: 10px;
+    flex-direction:column;
     align-items: center;
-    left: -100%;
+    
 
 
 
 }
-.bug{
-    left: 0;
+header nav .nav_ul li:hover{
+    border-bottom:3px solid red;
 }
+
 
 footer{
     margin-top: 300px;
@@ -903,7 +907,18 @@ footer{
     
 }
 
+@media screen and (min-width:481px){
 
+    header nav .nav_ul{
+        display: flex;
+        gap: 31px;
+    }
+   
+    
+
+
+
+}
 
 
 

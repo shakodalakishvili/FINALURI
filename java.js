@@ -1,9 +1,10 @@
-let burgerMenu = document.querySelector(".fa-bars");
+let burgerMenu = document.querySelector(".burgermenu");
 
 let mobileMenu = document.querySelector('.nav_ul');
 
 
 burgerMenu.addEventListener("click",function(){
-    mobileMenu.classList.toggle("bug")
+    mobileMenu.classList.toggle("show")
+    console.log(777)
     
 })
