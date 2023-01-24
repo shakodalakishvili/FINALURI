@@ -44,20 +44,25 @@ header{
 
 }
 
-header nav ul{
+header nav .nav_ul{
     display: flex;
     gap: 31px;
 }
 
-header nav ul li{
+header nav .nav_ul li{
     font-size: 11px;
     color: #343638;
     cursor: pointer;
     font-family: 'roboto';
     opacity: 0.5;
 }
-header nav ul li:hover{
+header nav nav.ul li:hover{
     border-bottom:3px solid red;
+}
+.fa-solid {
+    display: none;
+    
+
 }
 
 .active{
@@ -609,15 +614,20 @@ input[type='submit'] {
     display: flex;
     flex-direction: column;
    }
-   
+   header{
+    width: 768px;
+   }
+   .fa-bars{
+    display: none;
+   }
     .section_one{
-        width: 769px;
+        width: 768px;
         display: flex;
         flex-direction: column;
     
     }
     .poto{
-        width: 769px;
+        width: 100%;
     }
     .world_news{
         align-items: left;
@@ -667,10 +677,16 @@ input[type='submit'] {
         display: flex;
         flex-direction: column;
     }
+
+
     .maindiv{
         width: 80%;
         display: flex;
         flex-direction: column;
+    }
+
+    .leftimageone{
+        width: 768px;
     }
     .right{
         width: 100%;
@@ -776,6 +792,9 @@ input[type='submit'] {
     .section_three{
         margin-top: 90%;
     }
+    .leftimageone{
+        width: 480px;
+    }
     .section{
         width: 100%;
         display: flex;
@@ -810,6 +829,75 @@ footer{
 .right_h4img{
     display: flex;
     flex-direction: row;
+}
+/* contact */
+
+.header{
+    width: 100%;
+}
+header{
+    width: 480px;
+}
+nav{
+    display: none;
+}
+
+.img-container{
+    width: 480px;
+}
+.contact-form{
+    width: 480px;
+}
+.righttext{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.righttextone{
+    margin-bottom: 30px;
+
+}
+.imagespilo{
+    margin-top: 200px;
+
+}
+
+.sectionmaintwo{
+    width: 480px;
+    
+}
+.fa-bars{
+    display: block;
+    
+   
+
+}
+.fa-bars:hover{
+    cursor: pointer;
+    
+}
+
+
+.nav_ul{
+    width: 480px;
+    position: fixed;
+    top: 100px;
+    background-color:black;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    left: -100%;
+
+
+
+}
+.bug{
+    left: 0;
+}
+
+footer{
+    margin-top: 300px;
 }
 
     
