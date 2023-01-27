@@ -5,44 +5,26 @@
     margin: 0 auto;
     position: relative;
     font-family:'roboto'sans-serif ;
+    padding-top: 52px;
 }
+
 
 /* Daiywo header */
 
 header{
-    width: 1440px;
+    width: inherit;
     height: inherit;
-    padding: 20px 20px 11px 20px;
+    padding: 18px 20px;
     background-color: #f6f8f9;
     position: fixed;
     top: 0px;
-}
-.header{
-    width: 100%;
-    height: 100%;
+    left: 50%;
+    z-index: 10;
+    transform:translateX(-50%) ;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-}
-.one{
-    animation-name: logo;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 
-@keyframes logo {
-
-    0% {transform:rotate(0deg);
-        top: 0px;}
-    100%{
-        transform: rotate(360deg);
-
-    }
-    
-   
-
-}
 
 
 
@@ -68,9 +50,10 @@ header nav .nav_ul li:hover{
     opacity: 1;    
 }
 
-/* daiwyo section */
+/* daiwyo section one */
+
 .section_one{
-    width: 1440px;
+    width: 100%;
     height: 599px;
     display: flex;
     
@@ -83,8 +66,12 @@ header nav .nav_ul li:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
 .world_news{
 
     width: 65%;
@@ -92,7 +79,7 @@ header nav .nav_ul li:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 176px auto 176px auto;
+    /* margin: 176px auto 176px auto; */
     
 
 }
@@ -109,7 +96,7 @@ h1,.P_ONE{
 }
 h1::after{
     content: "";
-    width: 400px;
+    width: 100%;
     height: 1.5px;
     background-color: white;
     display: block;
@@ -121,7 +108,8 @@ h1::after{
     color: white;
 }
 .learn-more{
-    padding: 10px 20px;
+    width: 134px;
+    padding: 14px 30px;
     width: fit-content;
     font-size: 11px;
     color: white;
@@ -142,6 +130,9 @@ h1::after{
     width: 40%;
     height: 100%;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -204,18 +195,18 @@ h3{
 
 .section_two{
     width: 80%;
-    height: 410px;
     margin: 0 auto;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 40px auto;
+    
 }
-/* .section{
-    width: 80%;
-    height: 100%;
+.section_two_tittle{
     margin: 0 auto;
-} */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
 .CARDS{
     width: 100%;
     height: 350px;
@@ -225,13 +216,23 @@ h3{
     justify-content: space-between;
 }
 .card{
-    background-color: white;
     width: 37%;
     height: 100%;
+    background-color: white;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+}
+.cardo{
+    width: 37%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 h4{
     font-size: 24px;
@@ -241,15 +242,25 @@ h4{
     width: 100%;
     height: 50%;
     margin-bottom: 40px;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
 }
-.foto-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.card_tittle{
+    width: 80%;
+    margin-bottom: 9px;
+    font-size:16px;
+    font-weight: bold;
+    color:#202124;
 }
-.grass{
+.card_text{
+    width: 80%;
+    font-size: 13px;
+    color: #a6adb4;
+}
+
+
+.foto_card{
     background-image: url(../photos/card1.png);
     background-position: center;
     background-size: cover;
@@ -257,11 +268,11 @@ h4{
     transition: all 4s ease;
     background-color: rgb(0,0,8);
 }
-.grass:hover{
+.foto_card:hover{
     opacity: 0.5;
     cursor: pointer;
 }
-.umbrella{
+.foto_card{
     background-image: url(../photos/card2.png);
     background-position: center;
     background-size: cover;
@@ -269,12 +280,12 @@ h4{
 
 
 }
-.umbrella:hover{
+.foto_card:hover{
     opacity: 0.5;
     cursor: grab;
 }
 
-.sky{
+.foto_card{
     background-image: url(../photos/card3.png);
     background-position: center;
     background-size: cover;
@@ -282,7 +293,7 @@ h4{
     animation-duration: 5s;
 
 }
-@keyframes sky {
+@keyframes foto_card {
     55%{
         background-image: url(../photos/card3.png);
         opacity: 0.5;
@@ -291,89 +302,91 @@ h4{
         cursor: move;
         
 
-    }
+    }}
 
-    }
-    .p_six{
-        width: 80%;
-        height: 40%;
-        margin: 0 auto;
 
-    }
-    .p_cardonetwo{
-        line-height: 1.5;
-    }
+    
+   
 /* section 3 daiwyio */
 
 .section_three{
     width: 80%;
-    margin: 0 auto;
-    padding-bottom: 30px;
+    margin: 0 auto 100px auto;
     background-color:#f6f8f9 ;
     display: flex;
     flex-direction: column;
 
 }
-.sectiontree_two{
+.section_three_tittle{
     font-size: 24px;
     font-weight: bold;
     font-family: 'roboto';
     margin-bottom: 40px;    
-    display: flex;
-    justify-content: space-between;
+    
+
 }
 .maindiv{
     width: 100%;
-    padding-top: 40px;
-    padding-top: 0px;
     display: flex;
+    justify-content: space-between;
+}
+.leftside{
+    width: 65%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .leftimage{
-    width: 60%;
+    width: 100%;
+    height: 47%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 40px;
     
 }
 .leftimageone{
-    width: 760px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 .leftimage_h5{
-    font-family: roboto;
+    width: 80%;
     font-size: 16px;
     font-weight: bold;
     color: white;
     position: absolute;
     top: 40px;
-    left: 40px;
-    z-index: 5;
+    
+    
 }
 .leftimage_h6{
-    width: 760px;
+    width: 80%;
     font-family: roboto;
     font-size: 24px;
     font-weight: bold;
     position: absolute;
     color: white;
-    top: 288px;
-    left: 40px;
-    z-index: 5;
+    top: 270px;
+    
+ 
 }
 .leftimage_p{
-    width: 618px;
+    width: 80%;
     font-family: roboto;
     font-size: 16px;
     color: white;
-    padding-top: 10px;
     position: absolute;
-    top: 310px;
+    top: 300px;
     left: 40px;
-    z-index: 5;
+    
 }
 .right{
-    width: 40%;
+    width: 30%;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -382,32 +395,35 @@ h4{
 
 }
 .rightside{
-    width: 345px;
-    height: 274px;
-    display: inline-block;
+    width: 100%;
+    height: 33.3%;
+   
+}
+.rightsideo{
+    width: 100%;
+    height: 33.3%;
+
 }
 .right_imag{
     width: 100%;
-    height: 90%;
-    padding-bottom: 75px;
+    height: 70%;
+    
 
 }
 .right_h4imag{
     font-size: 16px;
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 /* daiwyo footer */
 footer{
-    width: 1440px;
-    height: 200px;
+    width: 100%;
     margin: 0 auto;    
-    padding: 58px 132px 63px 145px;
+    padding: 58px 10% 63px 10%;
     background-color: #a6adb4;
-    font-size: 13px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
 
 }
@@ -422,10 +438,15 @@ footer:hover{
 
 .left-footer {
     display: flex;
+    gap:40px;
 }
-.footer_nav {
-    margin-right: 50px;
+.footer_nav{
+    display: flex;
+    gap:40px;
+
 }
+
+
 .footer_logo{
     font-size: 20px;
     color: #fff;
@@ -451,25 +472,61 @@ footer:hover{
     
     }
 
-.footer_nav ul li {
+.footer_ul li {
     font-size: 15px;
     margin-bottom: 10px;
     color: #fff;
 }
+.footer_il li:hover {
+
+    border-bottom: 2px solid red;
+
+}
+.footer-socials{
+    display: flex;
+    gap:31px;
+    
+}
+
 .footer-socials i {
-    margin-left: 32px;
     color:#fff ;
     
 }
 /* conteineri */
+
+.conteiner_contact{
+    max-width: 1440px;
+    width: 100%;
+    background-color: #f6f8f9;
+    margin: 0 auto;
+    position: relative;
+    font-family:'roboto'sans-serif ;
+    padding-top: 52px;
+}
+.contact_header{
+    width: inherit;
+    height: inherit;
+    padding: 18px 20px;
+    background-color: #f6f8f9;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    z-index: 10;
+    transform:translateX(-50%) ;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .a_two{
     color: #343638;
     font-weight: bolder;
     opacity: 1
     ;
 }
+
 .contact-hero {
-    width: 80%;
+    width: 100%;
     height: 410px;
     margin: 0 auto;
     margin-top: 40px;
@@ -496,6 +553,7 @@ footer:hover{
     text-transform: uppercase;    
 }
 .contact-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -607,6 +665,14 @@ input[type='submit'] {
     padding-bottom: 50px;
     color: #a6adb4;
 }
+.footer_nav{
+    color: #fff;
+}
+.footer_a{
+    color: #fff;
+}
+
+
 
 @media screen and (max-width:768px) {
 
@@ -617,13 +683,15 @@ input[type='submit'] {
     flex-direction: column;
    }
    header{
-    width: 768px;
+    width: 100%;
    }
    .fa-bars{
     display: none;
    }
     .section_one{
-        width: 768px;
+        width: 80%;
+        margin: 0 auto;
+
         display: flex;
         flex-direction: column;
     
@@ -772,6 +840,15 @@ input[type='submit'] {
     .conteiner{
         width: 480px;
     }
+    header{
+        width: 480px;
+        left: 0;
+        transform:translateX(0%) 
+    }
+    .one{
+        display: flex;
+    
+    }
     .section_one{
         width: 100%;
     }
@@ -834,9 +911,7 @@ footer{
 }
 /* contact */
 
-.header{
-    width: 100%;
-}
+
 header{
     width: 480px;
 }
@@ -846,6 +921,10 @@ header{
 }
 .contact-form{
     width: 480px;
+}
+.contact-hero{
+    width: 480px;
+    margin-top: 0;
 }
 .righttext{
     display: flex;
@@ -870,6 +949,7 @@ header{
     display: block;
     border: none;
     
+    
    
 
 }
@@ -882,10 +962,9 @@ header{
 .nav_ul{
     display: none;
     width: 200px;
-    
     position: fixed;
     top: 50px;
-    right: 300px;
+    right: 0;
     background-color:white;
     gap: 10px;
     flex-direction:column;
