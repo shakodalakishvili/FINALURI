@@ -22,8 +22,8 @@ header{
     z-index: 10;
     transform:translateX(-50%) ;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: space-between; }
+
 
 
 
@@ -877,6 +877,7 @@ input[type='submit'] {
     .conteiner{
         max-width:480px;
     }
+
     
     .one{
         display: flex;
@@ -1087,6 +1088,7 @@ header nav .nav_ul li:hover{
    
 
 }
+
 
 
 
